@@ -2,47 +2,47 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>RUACH</title>
+    <title>RUACH — Diseño Web</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #0b0b0b;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #0b0b0b;
             color: white;
         }
 
         header {
             height: 100vh;
-            background: linear-gradient(
-                rgba(0,0,0,0.7),
-                rgba(0,0,0,0.9)
-            ),
-            url("https://images.unsplash.com/photo-1492724441997-5dc865305da7?auto=format&fit=crop&w=1600&q=80");
+            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.95)),
+            url("https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1600&q=80");
             background-size: cover;
             background-position: center;
             display: flex;
             align-items: center;
-            justify-content: center;
-            text-align: center;
+            padding: 0 10%;
+        }
+
+        .hero {
+            max-width: 600px;
         }
 
         h1 {
             font-size: 4rem;
-            letter-spacing: 5px;
+            margin-bottom: 10px;
+            letter-spacing: 4px;
         }
 
         p {
             color: #ccc;
-            max-width: 700px;
-            margin: 20px auto;
+            line-height: 1.6;
         }
 
         .btn {
             display: inline-block;
-            margin-top: 30px;
-            padding: 15px 35px;
+            margin-top: 25px;
+            padding: 14px 35px;
             border: 2px solid white;
             color: white;
             text-decoration: none;
@@ -55,7 +55,25 @@
         }
 
         section {
-            padding: 80px 10%;
+            padding: 100px 10%;
+        }
+
+        .about {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .about img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 30px 60px rgba(0,0,0,0.6);
+            transition: transform 0.4s;
+        }
+
+        .about img:hover {
+            transform: scale(1.04);
         }
 
         .cards {
@@ -66,43 +84,28 @@
 
         .card {
             background: #151515;
-            padding: 25px;
+            padding: 30px;
             border-left: 4px solid white;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            transition: 0.3s;
         }
 
         .card:hover {
-            transform: scale(1.04);
+            transform: translateY(-10px);
             box-shadow: 0 20px 40px rgba(0,0,0,0.5);
-        }
-
-        .images {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 25px;
-        }
-
-        .images img {
-            width: 100%;
-            border-radius: 6px;
-            transition: transform 0.4s ease;
-        }
-
-        .images img:hover {
-            transform: scale(1.05);
         }
 
         footer {
             background: black;
-            padding: 40px;
             text-align: center;
+            padding: 50px 20px;
             color: #777;
         }
 
         .social a {
             color: white;
             text-decoration: none;
-            margin: 0 10px;
+            margin: 0 15px;
+            font-size: 18px;
             border-bottom: 1px solid white;
         }
     </style>
@@ -110,62 +113,72 @@
 <body>
 
 <header>
-    <div>
+    <div class="hero">
         <h1>RUACH</h1>
-        <p>Diseño y desarrollo web con enfoque profesional y moderno.</p>
-        <a class="btn" href="#servicios">VER MÁS</a>
+        <p>
+            Desarrollo de páginas web modernas, claras y funcionales.
+            Creamos presencia digital sólida para marcas que buscan verse profesionales.
+        </p>
+        <a href="#info" class="btn">Conocé más</a>
     </div>
 </header>
 
-<section id="servicios">
-    <h2>Qué hacemos</h2>
-
-    <div class="cards">
-        <div class="card">
-            <h3>Diseño Web</h3>
-            <p>Webs modernas, limpias y adaptadas a todos los dispositivos.</p>
+<section id="info">
+    <div class="about">
+        <div>
+            <h2>Qué hacemos</h2>
+            <p>
+                En RUACH diseñamos sitios web pensados para transmitir confianza,
+                claridad y profesionalismo. Nos enfocamos en páginas rápidas,
+                visualmente limpias y adaptadas a cualquier dispositivo.
+            </p>
+            <p>
+                Creamos sitios institucionales, páginas personales, portfolios y
+                páginas comerciales listas para mostrarse a clientes reales.
+            </p>
         </div>
 
-        <div class="card">
-            <h3>Estructura clara</h3>
-            <p>Contenido organizado para transmitir confianza.</p>
-        </div>
-
-        <div class="card">
-            <h3>Presencia digital</h3>
-            <p>Tu marca bien presentada en internet.</p>
-        </div>
+        <!-- IMAGEN DE EJEMPLO DE PÁGINA -->
+        <img src="https://images.unsplash.com/photo-1559027615-028c0c4e2c7c?auto=format&fit=crop&w=900&q=80" alt="Ejemplo de página web">
     </div>
 </section>
 
 <section>
-    <h2>Estilo visual</h2>
+    <h2>Servicios</h2>
 
-    <div class="images">
-        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=800&q=80">
-        <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=800&q=80">
-        <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=800&q=80">
+    <div class="cards">
+        <div class="card">
+            <h3>Diseño Web</h3>
+            <p>Páginas modernas, limpias y adaptadas a cualquier pantalla.</p>
+        </div>
+
+        <div class="card">
+            <h3>Estructura profesional</h3>
+            <p>Contenido claro, organizado y pensado para generar confianza.</p>
+        </div>
+
+        <div class="card">
+            <h3>Presencia online</h3>
+            <p>Tu marca visible, ordenada y lista para mostrarse al público.</p>
+        </div>
     </div>
 </section>
 
 <section>
     <h2>Contacto</h2>
-    <p>Podés escribirnos directamente o contactarnos por redes.</p>
+    <p>Podés escribirnos o encontrarnos en redes.</p>
 
-    <!-- CORREO PROFESIONAL -->
     <a class="btn" href="mailto:contacto@ruach.com">
         contacto@ruach.com
     </a>
 
-    <div class="social">
-        <p>Redes:</p>
-        <!-- ACA PEGÁS TU INSTAGRAM -->
+    <div class="social" style="margin-top:30px;">
         <a href="https://instagram.com/TU_USUARIO" target="_blank">Instagram</a>
     </div>
 </section>
 
 <footer>
-    © 2025 — RUACH
+    © 2025 — RUACH | Diseño y desarrollo web
 </footer>
 
 </body>
