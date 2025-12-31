@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>RUACH</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #0b0b0b;
+            color: white;
+        }
+
+        header {
+            height: 100vh;
+            background: linear-gradient(
+                rgba(0,0,0,0.7),
+                rgba(0,0,0,0.9)
+            ),
+            url("https://images.unsplash.com/photo-1492724441997-5dc865305da7?auto=format&fit=crop&w=1600&q=80");
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 4rem;
+            letter-spacing: 5px;
+        }
+
+        p {
+            color: #ccc;
+            max-width: 600px;
+            margin: 20px auto;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 15px 35px;
+            border: 2px solid white;
+            color: white;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 80px 10%;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: #151515;
+            padding: 25px;
+            border-left: 4px solid white;
+        }
+
+        footer {
+            background: black;
+            text-align: center;
+            padding: 30px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div>
+        <h1>RUACH</h1>
+        <p>Diseño y desarrollo web con enfoque profesional.</p>
+        <a class="btn" href="#servicios">VER MÁS</a>
+    </div>
+</header>
+
+<section id="servicios">
+    <h2>Qué hacemos</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Diseño Web</h3>
+            <p>Webs modernas, claras y adaptadas a todo tipo de dispositivos.</p>
+        </div>
+
+        <div class="card">
+            <h3>Estructura</h3>
+            <p>Organización del contenido para una mejor presentación.</p>
+        </div>
+
+        <div class="card">
+            <h3>Presencia online</h3>
+            <p>Tu marca visible y profesional en internet.</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Contacto</h2>
+    <p>Escribinos para empezar tu proyecto.</p>
+    <a class="btn" href="mailto:contacto@ruach.com">contacto@ruach.com</a>
+</section>
+
+<footer>
+    © 2025 — RUACH
+</footer>
+
+</body>
+</html>
+
