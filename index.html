@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>RUACH</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #0b0b0b;
+            color: white;
+        }
+
+        header {
+            height: 100vh;
+            background: linear-gradient(
+                rgba(0,0,0,0.7),
+                rgba(0,0,0,0.9)
+            ),
+            url("https://images.unsplash.com/photo-1492724441997-5dc865305da7?auto=format&fit=crop&w=1600&q=80");
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 4rem;
+            letter-spacing: 5px;
+        }
+
+        p {
+            color: #ccc;
+            max-width: 700px;
+            margin: 20px auto;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 15px 35px;
+            border: 2px solid white;
+            color: white;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: white;
+            color: black;
+        }
+
+        section {
+            padding: 80px 10%;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: #151515;
+            padding: 25px;
+            border-left: 4px solid white;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.04);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+        }
+
+        .images {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+        }
+
+        .images img {
+            width: 100%;
+            border-radius: 6px;
+            transition: transform 0.4s ease;
+        }
+
+        .images img:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background: black;
+            padding: 40px;
+            text-align: center;
+            color: #777;
+        }
+
+        .social a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            border-bottom: 1px solid white;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div>
+        <h1>RUACH</h1>
+        <p>Diseño y desarrollo web con enfoque profesional y moderno.</p>
+        <a class="btn" href="#servicios">VER MÁS</a>
+    </div>
+</header>
+
+<section id="servicios">
+    <h2>Qué hacemos</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Diseño Web</h3>
+            <p>Webs modernas, limpias y adaptadas a todos los dispositivos.</p>
+        </div>
+
+        <div class="card">
+            <h3>Estructura clara</h3>
+            <p>Contenido organizado para transmitir confianza.</p>
+        </div>
+
+        <div class="card">
+            <h3>Presencia digital</h3>
+            <p>Tu marca bien presentada en internet.</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Estilo visual</h2>
+
+    <div class="images">
+        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=800&q=80">
+        <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=800&q=80">
+        <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=800&q=80">
+    </div>
+</section>
+
+<section>
+    <h2>Contacto</h2>
+    <p>Podés escribirnos directamente o contactarnos por redes.</p>
+
+    <!-- CORREO PROFESIONAL -->
+    <a class="btn" href="mailto:contacto@ruach.com">
+        contacto@ruach.com
+    </a>
+
+    <div class="social">
+        <p>Redes:</p>
+        <!-- ACA PEGÁS TU INSTAGRAM -->
+        <a href="https://instagram.com/TU_USUARIO" target="_blank">Instagram</a>
+    </div>
+</section>
+
+<footer>
+    © 2025 — RUACH
+</footer>
+
+</body>
+</html>
