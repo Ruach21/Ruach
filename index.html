@@ -1,184 +1,166 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>RUACH — Diseño Web</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>RUACH — Diseño Web</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            background: #0b0b0b;
-            color: white;
-        }
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-        header {
-            height: 100vh;
-            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.95)),
-            url("https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1600&q=80");
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            align-items: center;
-            padding: 0 10%;
-        }
+<style>
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f6f8fb;
+    color: #111;
+}
 
-        .hero {
-            max-width: 600px;
-        }
+header {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 0 8%;
+    gap: 60px;
+    background: linear-gradient(120deg, #ffffff, #eef3ff);
+}
 
-        h1 {
-            font-size: 4rem;
-            margin-bottom: 10px;
-            letter-spacing: 4px;
-        }
+h1 {
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+}
 
-        p {
-            color: #ccc;
-            line-height: 1.6;
-        }
+p {
+    color: #444;
+    line-height: 1.6;
+    max-width: 500px;
+}
 
-        .btn {
-            display: inline-block;
-            margin-top: 25px;
-            padding: 14px 35px;
-            border: 2px solid white;
-            color: white;
-            text-decoration: none;
-            transition: 0.3s;
-        }
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 14px 34px;
+    background: #111;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s;
+}
 
-        .btn:hover {
-            background: white;
-            color: black;
-        }
+.btn:hover {
+    background: #333;
+}
 
-        section {
-            padding: 100px 10%;
-        }
+.mockup img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 40px 80px rgba(0,0,0,0.25);
+    transition: transform 0.4s;
+}
 
-        .about {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 60px;
-            align-items: center;
-        }
+.mockup img:hover {
+    transform: scale(1.04);
+}
 
-        .about img {
-            width: 100%;
-            border-radius: 8px;
-            box-shadow: 0 30px 60px rgba(0,0,0,0.6);
-            transition: transform 0.4s;
-        }
+section {
+    padding: 100px 8%;
+}
 
-        .about img:hover {
-            transform: scale(1.04);
-        }
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 40px;
+}
 
-        .cards {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-        }
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
 
-        .card {
-            background: #151515;
-            padding: 30px;
-            border-left: 4px solid white;
-            transition: 0.3s;
-        }
+.card:hover {
+    transform: translateY(-10px);
+}
 
-        .card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.5);
-        }
+footer {
+    background: #0d0d0d;
+    color: #ccc;
+    padding: 50px 10%;
+    text-align: center;
+}
 
-        footer {
-            background: black;
-            text-align: center;
-            padding: 50px 20px;
-            color: #777;
-        }
+.social a {
+    color: white;
+    font-size: 22px;
+    margin: 0 12px;
+    transition: 0.3s;
+}
 
-        .social a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 18px;
-            border-bottom: 1px solid white;
-        }
-    </style>
+.social a:hover {
+    color: #aaa;
+}
+</style>
 </head>
 <body>
 
 <header>
-    <div class="hero">
+    <div>
         <h1>RUACH</h1>
         <p>
-            Desarrollo de páginas web modernas, claras y funcionales.
-            Creamos presencia digital sólida para marcas que buscan verse profesionales.
+            Creamos páginas web modernas, claras y funcionales.
+            Diseñadas para representar marcas reales, con presencia profesional
+            y una estética cuidada.
         </p>
-        <a href="#info" class="btn">Conocé más</a>
+
+        <a class="btn" href="#servicios">Ver más</a>
+    </div>
+
+    <!-- IMAGEN TIPO MOCKUP -->
+    <div class="mockup">
+        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80">
     </div>
 </header>
 
-<section id="info">
-    <div class="about">
-        <div>
-            <h2>Qué hacemos</h2>
-            <p>
-                En RUACH diseñamos sitios web pensados para transmitir confianza,
-                claridad y profesionalismo. Nos enfocamos en páginas rápidas,
-                visualmente limpias y adaptadas a cualquier dispositivo.
-            </p>
-            <p>
-                Creamos sitios institucionales, páginas personales, portfolios y
-                páginas comerciales listas para mostrarse a clientes reales.
-            </p>
-        </div>
+<section id="servicios">
+    <h2>Qué hacemos</h2>
+    <p>Diseñamos y desarrollamos sitios web pensados para verse bien, funcionar rápido y transmitir confianza.</p>
 
-        <!-- IMAGEN DE EJEMPLO DE PÁGINA -->
-        <img src="https://images.unsplash.com/photo-1559027615-028c0c4e2c7c?auto=format&fit=crop&w=900&q=80" alt="Ejemplo de página web">
-    </div>
-</section>
-
-<section>
-    <h2>Servicios</h2>
-
-    <div class="cards">
+    <div class="services">
         <div class="card">
-            <h3>Diseño Web</h3>
-            <p>Páginas modernas, limpias y adaptadas a cualquier pantalla.</p>
+            <h3>Diseño web</h3>
+            <p>Interfaces modernas, limpias y adaptadas a todo tipo de dispositivos.</p>
         </div>
 
         <div class="card">
-            <h3>Estructura profesional</h3>
-            <p>Contenido claro, organizado y pensado para generar confianza.</p>
+            <h3>Presencia digital</h3>
+            <p>Tu marca visible en internet de forma profesional y ordenada.</p>
         </div>
 
         <div class="card">
-            <h3>Presencia online</h3>
-            <p>Tu marca visible, ordenada y lista para mostrarse al público.</p>
+            <h3>Identidad visual</h3>
+            <p>Diseño coherente con tu proyecto y fácil de entender para tus clientes.</p>
         </div>
     </div>
 </section>
 
 <section>
     <h2>Contacto</h2>
-    <p>Podés escribirnos o encontrarnos en redes.</p>
+    <p>Podés escribirnos o encontrarnos en redes sociales.</p>
 
-    <a class="btn" href="mailto:contacto@ruach.com">
-        contacto@ruach.com
-    </a>
+    <p><strong>contacto@ruach.com</strong></p>
 
-    <div class="social" style="margin-top:30px;">
-        <a href="https://instagram.com/TU_USUARIO" target="_blank">Instagram</a>
+    <div class="social">
+        <!-- Instagram minimalista -->
+        <a href="https://instagram.com/TU_USUARIO" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
     </div>
 </section>
 
 <footer>
-    © 2025 — RUACH | Diseño y desarrollo web
+    © 2025 — RUACH | Diseño Web Profesional
 </footer>
 
 </body>
